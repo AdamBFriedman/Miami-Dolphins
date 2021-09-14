@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="app">
     <v-app-bar app class="appbar">
       <div class="d-flex align-center">
         <v-img
@@ -69,8 +69,11 @@
 :root {
   --aqua: #008e97;
 }
-.appbar {
+.app {
   background: #008e97 !important;
+}
+.appbar {
+  background: #fc4c02 !important;
 }
 </style>
 
