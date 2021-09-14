@@ -6,7 +6,7 @@
       max-width="374"
       :key="i"
     >
-      <v-img height="250" :src="require(`@/${player.src}`)"></v-img>
+      <v-img height="250" width="250" :src="require(`@/${player.src}`)"></v-img>
 
       <v-card-title>{{ player.name }}</v-card-title>
 
@@ -34,67 +34,67 @@ export default {
       {
         id: 1,
         name: "Tua Tagovailoa",
-        src: "assets/logo.png",
+        src: "assets/tua_tagovailoa.png",
         position: "QB",
       },
       {
         id: 2,
         name: "DeVante Parker",
-        src: "assets/logo.png",
+        src: "assets/devante_parker.png",
         position: "WR",
       },
       {
         id: 3,
         name: "Jaylen Waddle",
-        src: "assets/logo.png",
+        src: "assets/jaylen_waddle.png",
         position: "WR",
       },
       {
         id: 4,
         name: "Jakeem Grant Sr",
-        src: "assets/logo.png",
+        src: "assets/jakeem_grant.png",
         position: "WR",
       },
       {
         id: 5,
         name: "Myles Gaskin",
-        src: "assets/logo.png",
+        src: "assets/myles_gaskin.png",
         position: "RB",
       },
       {
         id: 6,
         name: "Mike Gesicki",
-        src: "assets/logo.png",
+        src: "assets/mike_gesicki.png",
         position: "TE",
       },
       {
         id: 7,
         name: "Austin Jackson",
-        src: "assets/logo.png",
+        src: "assets/austin_jackson.png",
         position: "LT",
       },
       {
         id: 8,
         name: "Solomon Kindley",
-        src: "assets/logo.png",
+        src: "assets/solomon_kindley.png",
         position: "LG",
       },
       {
         id: 9,
         name: "Michael Deiter",
-        src: "assets/logo.png",
+        src: "assets/michael_deiter.png",
         position: "C",
       },
       {
         id: 10,
         name: "Robert Hunt",
-        src: "assets/logo.png",
+        src: "assets/robert_hunt.png",
         position: "RG",
       },
       {
         id: 11,
         name: "Jesse Davis",
-        src: "assets/logo.png",
+        src: "assets/jesse_davis.png",
         position: "RT",
       },
     ],
