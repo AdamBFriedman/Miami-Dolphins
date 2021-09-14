@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app class="appbar">
       <div class="d-flex align-center">
         <v-img
           alt="Miami Dolphins Logo"
@@ -64,6 +64,15 @@
     </v-main>
   </v-app>
 </template>
+
+<style scoped>
+:root {
+  --aqua: #008e97;
+}
+.appbar {
+  background: #008e97 !important;
+}
+</style>
 
 <script>
 import Card from "./components/Card";
