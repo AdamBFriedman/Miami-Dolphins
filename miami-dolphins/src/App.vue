@@ -93,9 +93,9 @@
           :src="player.src"
         />
       </v-row>
-      <v-row class="row" v-else>
+      <v-row class="row" v-if="fullSquadFilter">
         <Card
-          v-for="(player, i) in fullSquadFilter"
+          v-for="(player, i) in fullSquad"
           :key="i"
           :playerName="player.name"
           :position="player.position"
@@ -301,7 +301,7 @@ export default {
       return this.filteredOption === "Second Team";
     },
     fullSquadFilter: function() {
-      return this.dolphins;
+      return this.filteredOption === "Full Squad";
     },
     firstTeam: function() {
       return this.dolphins.filter((player) => {
@@ -374,6 +374,9 @@ export default {
           player.position === "RG"
         );
       });
+    },
+    fullSquad: function() {
+      return this.dolphins;
     },
   },
   methods: {
