@@ -22,7 +22,8 @@
         <Card
           v-for="(player, i) in firstTeamQB"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -31,7 +32,8 @@
         <Card
           v-for="(player, i) in secondTeamQB"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -40,7 +42,8 @@
         <Card
           v-for="(player, i) in firstTeamRB"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -49,7 +52,8 @@
         <Card
           v-for="(player, i) in secondTeamRB"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -58,7 +62,8 @@
         <Card
           v-for="(player, i) in firstTeamTE"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -67,7 +72,8 @@
         <Card
           v-for="(player, i) in secondTeamTE"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -76,7 +82,8 @@
         <Card
           v-for="(player, i) in firstTeamWR"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -85,7 +92,8 @@
         <Card
           v-for="(player, i) in secondTeamWR"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -94,7 +102,8 @@
         <Card
           v-for="(player, i) in firstTeamOLine"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -103,7 +112,8 @@
         <Card
           v-for="(player, i) in firstTeamSpecialTeam"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -112,7 +122,8 @@
         <Card
           v-for="(player, i) in secondTeamOLine"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
@@ -121,7 +132,8 @@
         <Card
           v-for="(player, i) in fullSquad"
           :key="i"
-          :playerName="player.name"
+          :firstName="player.firstName"
+          :lastName="player.lastName"
           :position="player.position"
           :src="player.src"
         />
