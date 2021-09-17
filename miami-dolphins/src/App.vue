@@ -99,6 +99,15 @@
           :src="player.src"
         />
       </v-row>
+      <v-row class="row" v-if="firstTeamFilter">
+        <Card
+          v-for="(player, i) in firstTeamSpecialTeam"
+          :key="i"
+          :playerName="player.name"
+          :position="player.position"
+          :src="player.src"
+        />
+      </v-row>
       <v-row class="row" v-if="secondTeamFilter">
         <Card
           v-for="(player, i) in secondTeamOLine"
@@ -230,76 +239,90 @@ export default {
       },
       {
         id: 12,
+        name: "Jason Sanders",
+        src: "assets/jason_sanders.png",
+        position: "K",
+        depth: 1,
+      },
+      {
+        id: 13,
+        name: "Michael Palardy",
+        src: "assets/michael_palardy.png",
+        position: "P",
+        depth: 1,
+      },
+      {
+        id: 14,
         name: "Jacoby Brissett",
         src: "assets/jacoby_brissett.png",
         position: "QB",
         depth: 2,
       },
       {
-        id: 13,
+        id: 15,
         name: "Preston Williams",
         src: "assets/preston_williams.png",
         position: "WR",
         depth: 2,
       },
       {
-        id: 14,
+        id: 16,
         name: "Albert Wilson",
         src: "assets/albert_wilson.png",
         position: "WR",
         depth: 2,
       },
       {
-        id: 15,
+        id: 17,
         name: "Mack Hollins",
         src: "assets/mack_hollins.png",
         position: "WR",
         depth: 2,
       },
       {
-        id: 16,
+        id: 18,
         name: "Malcolm Brown",
         src: "assets/malcolm_brown.png",
         position: "RB",
         depth: 2,
       },
       {
-        id: 17,
+        id: 19,
         name: "Adam Shaheen",
         src: "assets/adam_shaheen.png",
         position: "TE",
         depth: 2,
       },
       {
-        id: 18,
+        id: 20,
         name: "Greg Little",
         src: "assets/greg_little.png",
         position: "LT",
         depth: 2,
       },
       {
-        id: 19,
+        id: 21,
         name: "Robert Jones",
         src: "assets/robert_jones.png",
         position: "LG",
         depth: 2,
       },
       {
-        id: 20,
+        id: 22,
         name: "Greg Mancz",
         src: "assets/greg_mancz.png",
         position: "C",
         depth: 2,
       },
       {
-        id: 21,
+        id: 23,
         name: "Robert Jones",
         src: "assets/robert_jones.png",
         position: "RG",
         depth: 2,
       },
       {
-        id: 22,
+        id: 24,
         name: "Liam Eichenberg",
         src: "assets/liam_eichenberg.png",
         position: "RT",
@@ -513,6 +536,11 @@ export default {
           player.position === "RT" ||
           player.position === "RG"
         );
+      });
+    },
+    firstTeamSpecialTeam: function() {
+      return this.firstTeam.filter((player) => {
+        return player.position === "K" || player.position === "P";
       });
     },
     secondTeamQB: function() {
