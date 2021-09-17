@@ -1,5 +1,20 @@
 <template>
   <v-app class="app">
+    <v-app-bar app class="appbar">
+      <div class="d-flex align-center">
+        <v-img
+          alt="Miami Dolphins Logo"
+          class="shrink mr-2"
+          contain
+          src="./assets/logo.png"
+          transition="scale-transition"
+          width="70"
+        />
+      </div>
+
+      <v-spacer></v-spacer>
+    </v-app-bar>
+
     <v-main class="d-flex">
       <Menu @filtered="handleChange" />
 
