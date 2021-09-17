@@ -3,7 +3,9 @@
     <v-card class="card my-12" max-width="374" @click="handleClick">
       <v-img height="250" width="250" :src="require(`@/${src}`)"></v-img>
 
-      <v-card-title>{{ playerName }}</v-card-title>
+      <v-card-title
+        >{{ firstNameCapitalized }} {{ lastNameCapitalized }}</v-card-title
+      >
 
       <v-card-text> <strong>Position:</strong> {{ position }} </v-card-text>
     </v-card>
@@ -21,7 +23,8 @@
 export default {
   name: "Card",
   props: {
-    playerName: String,
+    firstName: String,
+    lastName: String,
     depth: Number,
     position: String,
     src: String,
@@ -30,6 +33,17 @@ export default {
   methods: {
     handleClick() {
       alert("Coming soon!");
+    },
+    capitalizeString(str) {
+      return str.replace(/\w/, (c) => c.toUpperCase());
+    },
+  },
+  computed: {
+    firstNameCapitalized: function() {
+      return this.capitalizeString(this.firstName);
+    },
+    lastNameCapitalized: function() {
+      return this.capitalizeString(this.lastName);
     },
   },
 };
