@@ -135,7 +135,7 @@ export default {
   },
   data: () => ({
     logo: "./assets/logo.png",
-    dolphins: [
+    offense: [
       {
         id: 1,
         name: "Tua Tagovailoa",
@@ -460,12 +460,12 @@ export default {
       return this.filteredOption === "Full Squad";
     },
     firstTeam: function() {
-      return this.dolphins.filter((player) => {
+      return this.offense.filter((player) => {
         return player.depth === 1;
       });
     },
     secondTeam: function() {
-      return this.dolphins.filter((player) => {
+      return this.offense.filter((player) => {
         return player.depth === 2;
       });
     },
@@ -532,7 +532,7 @@ export default {
       });
     },
     fullSquad: function() {
-      return this.dolphins;
+      return this.offense;
     },
   },
   methods: {
