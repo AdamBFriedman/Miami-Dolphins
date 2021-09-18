@@ -24,6 +24,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -34,6 +35,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -44,6 +46,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -54,6 +57,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -64,6 +68,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -74,6 +79,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -84,6 +90,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -94,6 +101,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -104,6 +112,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -114,6 +123,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -124,6 +134,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
@@ -134,6 +145,7 @@
           :key="i"
           :firstName="player.firstName"
           :lastName="player.lastName"
+          :number="player.number"
           :position="player.position"
           :src="player.src"
         />
