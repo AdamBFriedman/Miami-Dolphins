@@ -7,7 +7,12 @@
         >{{ firstNameCapitalized }} {{ lastNameCapitalized }}</v-card-title
       >
 
-      <v-card-text> <strong>Position:</strong> {{ position }} </v-card-text>
+      <v-card-text class="card-text">
+        <strong>Position:</strong> {{ position }}
+      </v-card-text>
+      <v-card-text class="card-text">
+        <strong>Number:</strong> {{ number }}
+      </v-card-text>
     </v-card>
   </v-row>
 </template>
@@ -16,6 +21,9 @@
 .card {
   box-shadow: 8px 8px 12px #fc4c02 !important;
   cursor: pointer;
+}
+.card-text {
+  padding: 0.5em !important;
 }
 </style>
 
@@ -28,6 +36,7 @@ export default {
     depth: Number,
     position: String,
     src: String,
+    number: Number,
   },
   data: () => ({}),
   methods: {
