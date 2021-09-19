@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 .card-text {
-  padding: 0.5em !important;
+  padding: 0 0.5em 0.5em !important;
 }
 </style>
 
